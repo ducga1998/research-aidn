@@ -3,7 +3,7 @@ hr.indexOf("nore=1") <= 0 && 0 < hr.indexOf("a.aidn") && (location.href = hr.spl
     function(e, t, n, i, a, o, r) {
         e.GoogleAnalyticsObject = a, e.ga = e.ga || function() {
             (e.ga.q = e.ga.q || []).push(arguments)
-        }, e.ga.l = 1 * new Date, o = t.createElement(n), r = t.getElementsByTagName(n)[0], o.async = 1, o.src = "https://www.google-analytics.com/analytics.js", r.parentNode.insertBefore(o, r)
+        }, e.ga.l = 1 * new Date, o = t.createElement(n), r = t.getElementsByTagName(n)[0], o.async = 1, o.src = "", r.parentNode.insertBefore(o, r)
     }(window, document, "script", 0, "ga"), ga("create", "UA-27113912-1", "auto"), ga("send", "pageview");
 var aidn = aidn || {};
 aidn.log = function() {

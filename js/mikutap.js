@@ -99,7 +99,7 @@ var MainManager = function() {
         }), $("#bt_feedback a").click(n), $("#bt_backtrack a").click(o);
         var G, A, y = aidn.util.checkJapanese(),
             E = aidn.util.checkMobile(),
-            w = "https://aidn.jp/mikutap/",
+            // w = "https://aidn.jp/mikutap/",
             M = "Mikutap";
         M += y ? ",初音ミク10周年" : ",Miku10th", $("#bt_tw").click(function(n) {
             var a = document.title;
