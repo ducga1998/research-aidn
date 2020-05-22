@@ -29,9 +29,7 @@ html {
   text-align: center;
   background: rgb(56, 71, 71);
   color: #fff;
-  font-family: Quicksand, "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic,
-    "Yu Gothic UI", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
-    "Meiryo UI", "メイリオ", Meiryo, sans-serif;
+ 
 }
 #about_cover,
 #view {

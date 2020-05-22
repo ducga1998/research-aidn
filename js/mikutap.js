@@ -58,7 +58,7 @@ var MainManager = function() {
                 var n = 1;
                 2 <= window.devicePixelRatio && (n = 2);
                 (I = PIXI.autoDetectRenderer(G, A, {
-                    backgroundColor: 16756655,
+                    backgroundColor: 0x385354,
                     antialias: !1,
                     resolution: n
                 })).autoResize = !0, document.getElementById("view").appendChild(I.view), z = new PIXI.Container, g.init(), a(), $("#scene_top").fadeIn(300), r()
@@ -75,7 +75,7 @@ var MainManager = function() {
         B && ($("#bt_fs").css("display", "block"), $("#bt_fs").click(function(n) {
             aidn.util.fullscreen()
         })), $("#bt_start a").click(function(n) {
-            $("#scene_top").stop().fadeOut(200, "linear"), $("#scene_loading").stop().fadeIn(200, "linear"), 2 == b ? i() : ((new aidn.WebAudio).load(""), C.init(t, e));
+        $("#scene_top").stop().fadeOut(200, "linear"), $("#scene_loading").stop().fadeIn(200, "linear"), 2 == b ? i() : ((new aidn.WebAudio).load(""), C.init(t, e));
             try {
                 aidn.adv.hide()
             } catch (n) {}
@@ -96,7 +96,7 @@ var MainManager = function() {
                 default:
                     location.href = "../contents/"
             }
-        }), $("#bt_feedback a").click(n), $("#bt_backtrack a").click(o);
+        })
         var G, A, y = aidn.util.checkJapanese(),
             E = aidn.util.checkMobile(),
             // w = "https://aidn.jp/mikutap/",
