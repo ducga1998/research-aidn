@@ -248,7 +248,6 @@ var MainManager = function () {
                     f = 6e4 / 280;
             })(),
             g = new (function () {
-                console.log("gggg nha")
                 var s = function (n, a) {
                         (this.id = n),
                             (this.setPosition = function (n, a) {
@@ -629,7 +628,7 @@ var MainManager = function () {
                     M = [],
                     arrayHandleAnimation = [
                         function (n, a) {
-                            console.log('1')
+
                             var s = function (n) {
                                 function l() {
                                     s.visible = !1;
@@ -639,7 +638,13 @@ var MainManager = function () {
                                     var t = G * Math.random(),
                                         i = A * Math.random(),
                                         o = Math.min(G, A) * (0.03 * Math.random() + 0.02);
-                                    s.lineStyle(3 * Math.random() + 3, e), s.drawCircle(0, 0, o), (s.x = n), (s.y = a), (s.scale.x = 0), (s.scale.y = 0), (s.rotation = Math.random() * Math.PI);
+                                    s.lineStyle(3 * Math.random() + 3, e),
+                                        s.beginFill(0x66CCFF);
+                                        s.drawCircle(0, 0, o), (s.x = n),
+                                        (s.y = a),
+                                        (s.scale.x = 0),
+                                        (s.scale.y = 0),
+                                        (s.rotation = Math.random() * Math.PI);
                                     var r = 0.2 * Math.random() + 0.4;
                                     return (
                                         TweenLite.to(s, r, {
@@ -668,7 +673,7 @@ var MainManager = function () {
                             this.play = function () {
                                 !(function () {
                                     h.setChildIndex(f, h.children.length - 1), (f.visible = !0);
-                                    for (var n = 5 * Math.random() + 7, a = 0, e = G / 2, t = A / 2, i = L(), o = 0; o < n; o++) {
+                                    for (var n = 7 * Math.random() + 100, a = 0, e = G / 2, t = A / 2, i = L(), o = 0; o < n; o++) {
                                         var r;
                                         r = c[o] ? c[o] : new s(f);
                                         var l = (c[o] = r).play(e, t, i);
@@ -682,6 +687,14 @@ var MainManager = function () {
                             this.id = a;
                             var c = [],
                                 f = new PIXI.Container();
+                            // let rectangle = new PIXI.Graphics();
+                            // rectangle.lineStyle(4, 0xFF3300, 1);
+                            // rectangle.beginFill(0x66CCFF);
+                            // rectangle.drawRect(0, 0, 64, 64);
+                            // rectangle.endFill();
+                            // rectangle.x = 170;
+                            // rectangle.y = 170;
+                            // h.addChild(rectangle);
                             h.addChild(f);
                         },
                         function (n, a) {
@@ -1495,6 +1508,7 @@ var MainManager = function () {
                         },
                         t,
                     ],
+
                     I = [
                         function (n, a) {
                             function d() {
@@ -1586,7 +1600,7 @@ var MainManager = function () {
                     ];
                 // random music
                 // aidn.util.shuffleArray(arrayHandleAnimation);
-
+// window.arrayHandleAnimation = arrayHandleAnimation
                 for (var b, x = 16 * Math.random(), C = [], g = 0; g < arrayHandleAnimation.length + I.length; g++) C[g] = [];
                 window.test  =C
                 var T,
